@@ -1,38 +1,105 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  margin: 1em;
+  overflow: auto;
+}
+
+table {
+  /* overflow: auto; */
+  margin: auto;
+}
+
+table,
+td {
+  border: 1px solid;
+}
+
+td {
+  min-width: 3rem;
+  min-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: default;
   text-align: center;
+  border-color: black;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cell-flag {
+  background: #aaa;
+  font-size: 0;
+}
+.cell-flag::after {
+  font-size: 2rem;
+  content: '►';
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cell-question {
+  background: #aaa;
+  font-size: 0;
+}
+.cell-question::after {
+  font-size: 2rem;
+  content: '?';
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cell-closed {
+  background: #aaa;
+  font-size: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.cell-mine {
+  font-size: 0;
+}
+.cell-mine::after {
+  font-size: 2rem;
+  content: '☼';
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell-mine-wrong {
+  font-size: 0;
+}
+.cell-mine-wrong::after {
+  font-size: 2rem;
+  content: '◙';
+  color: firebrick;
+}
+
+.cell-0 {
+  font-size: 0;
+}
+
+.cell-1 {
+  color: blue;
+}
+
+.cell-2 {
+  color: green;
+}
+
+.cell-3 {
+  color: red;
+}
+
+.messagebox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: salmon;
+  border: 1px solid peru;
+  padding: 2em;
 }
