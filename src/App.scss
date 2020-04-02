@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrap-1 {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.wrap-2 {
+  display: flex;
+  overflow: auto;
+}
+
+.game-field {
+  margin: auto;
+
+  table,
+  td {
+    border: 1px solid;
+  }
+
+  td {
+    min-width: 3rem;
+    min-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: default;
+    text-align: center;
+    border-color: black;
+    font-weight: bold;
+  }
+}
+
+.cell {
+  &-flag {
+    background: #aaa;
+    font-size: 0;
+
+    &:after {
+      font-size: 2rem;
+      content: '►';
+      color: red;
+    }
+  }
+
+  &-question {
+    background: #aaa;
+    font-size: 0;
+
+    &:after {
+      font-size: 2rem;
+      content: '?';
+      color: blue;
+    }
+  }
+
+  &-closed {
+    background: #aaa;
+    font-size: 0;
+  }
+
+  &-mine {
+    font-size: 0;
+
+    &:after {
+      font-size: 2rem;
+      content: '☼';
+      color: red;
+    }
+  }
+
+  &-mine-wrong {
+    font-size: 0;
+
+    &:after {
+      font-size: 2rem;
+      content: '◙';
+      color: firebrick;
+    }
+  }
+
+  &-0 {
+    font-size: 0;
+  }
+
+  &-1 {
+    color: blue;
+  }
+
+  &-2 {
+    color: green;
+  }
+
+  &-3 {
+    color: red;
+  }
+}
+
+.messagebox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: salmon;
+  border: 1px solid #222;
+  padding: 2em;
+
+  &__footer {
+    margin: 1em auto 0;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.game-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+
+  > * {
+    margin: 0.5em 0;
+  }
+
+  @media (max-width: 600px) {
+    .new-game {
+      width: 100%;
+    }
+  }
+}
+
+.new-game {
+  background: #2fc12c;
+  border: 1px solid #555;
+}
+
+.field {
+  margin-right: 1em;
+  position: relative;
+
+  &__label {
+    margin-right: 0.5em;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1em;
+    margin-top: 0.2em;
+    background: #ffd230;
+    color: maroon;
+    border: 1px solid maroon;
+  }
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+}
