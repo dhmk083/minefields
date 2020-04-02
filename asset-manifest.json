@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/minefields/static/css/main.80eef7ef.chunk.css",
+    "main.js": "/minefields/static/js/main.d6e51338.chunk.js",
+    "main.js.map": "/minefields/static/js/main.d6e51338.chunk.js.map",
+    "runtime-main.js": "/minefields/static/js/runtime-main.b5a67520.js",
+    "runtime-main.js.map": "/minefields/static/js/runtime-main.b5a67520.js.map",
+    "static/js/2.94e7c745.chunk.js": "/minefields/static/js/2.94e7c745.chunk.js",
+    "static/js/2.94e7c745.chunk.js.map": "/minefields/static/js/2.94e7c745.chunk.js.map",
+    "index.html": "/minefields/index.html",
+    "precache-manifest.9dc44daf114e252068977e410b131091.js": "/minefields/precache-manifest.9dc44daf114e252068977e410b131091.js",
+    "service-worker.js": "/minefields/service-worker.js",
+    "static/css/main.80eef7ef.chunk.css.map": "/minefields/static/css/main.80eef7ef.chunk.css.map",
+    "static/js/2.94e7c745.chunk.js.LICENSE.txt": "/minefields/static/js/2.94e7c745.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5a67520.js",
+    "static/js/2.94e7c745.chunk.js",
+    "static/css/main.80eef7ef.chunk.css",
+    "static/js/main.d6e51338.chunk.js"
+  ]
+}
